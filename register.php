@@ -1,7 +1,7 @@
 <?php
 
 // PARAMETRI DA MODIFICARE
-$WEBHOOK_URL = 'https://tuttogranatabot.herokuapp.com/execute.php';
+$WEBHOOK_URL = 'http://tuttogranatabot-tuttogranatab.rhcloud.com/register.php';
 $BOT_TOKEN = '209089836:AAF0BFNpELsUHsLHR7sw3GjFMKcfexr_RpI';
 
 // NON APPORTARE MODIFICHE NEL CODICE SEGUENTE
