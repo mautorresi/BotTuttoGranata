@@ -1,1 +1,1 @@
-<?php echo "Good";
+<?php echo "Very good";
