@@ -16,4 +16,4 @@ curl_setopt($handle, CURLOPT_TIMEOUT, 60);
 $result = curl_exec($handle);
 print_r($result);
 
-//https://api.telegram.org/bot209089836:AAF0BFNpELsUHsLHR7sw3GjFMKcfexr_RpI/setwebhook?url=http://www.tuttogranata.it/TelegramBot/TuttoGranataBot.php
+//https://api.telegram.org/bot209089836:AAF0BFNpELsUHsLHR7sw3GjFMKcfexr_RpI/setwebhook?url=http://telegrambot-tuttogranatab.rhcloud.com/execute.php
