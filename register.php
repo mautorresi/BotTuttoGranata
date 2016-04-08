@@ -1,7 +1,7 @@
 <?php
 
 // PARAMETRI DA MODIFICARE
-$WEBHOOK_URL = 'http://tuttogranatabot-tuttogranatab.rhcloud.com/execute.php';
+$WEBHOOK_URL = 'http://telegrambot-tuttogranatab.rhcloud.com/execute.php';
 $BOT_TOKEN = '209089836:AAF0BFNpELsUHsLHR7sw3GjFMKcfexr_RpI';
 
 // NON APPORTARE MODIFICHE NEL CODICE SEGUENTE
