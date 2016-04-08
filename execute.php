@@ -17,11 +17,10 @@ $username = isset($message['chat']['username']) ? $message['chat']['username'] :
 $date = isset($message['date']) ? $message['date'] : "";
 $text = isset($message['text']) ? $message['text'] : "";
 
-$text = trim($text); 
 $text = strtolower($text);
 
 header("Content-Type: application/json");
-$testo = file_get_contents('http://www.tuttogranata.it/TelegramBot/sender.php?text='.$text.'&&name='.$firstname.'&&date='.$date.'&&id'.$chatId);
+$testo = file_get_contents('http://www.tuttogranata.it/TelegramBot/sender.php?text='.$text.'&&name='.$firstname.'&&date='.$date.'&&id='.$chatId);
 $parameters = array('chat_id' => $chatId, "text" => $testo);
 
 $parameters["method"] = "sendMessage";
