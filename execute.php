@@ -20,9 +20,19 @@ $text = isset($message['text']) ? $message['text'] : "";
 $text = urlencode($text);
 $text = strtolower($text);
 
-header("Content-Type: application/json");
-$testo = file_get_contents('http://www.tuttogranata.it/TelegramBot/sender.php?text='.$text.'&&name='.$firstname.'&&date='.$date.'&&id='.$chatId);
-$parameters = array('chat_id' => $chatId, "text" => $testo);
+if ($_GET['a']) {
+  $a = $_GET['a'];
+  header("Content-Type: application/json");
+  $testo = file_get_contents('http://www.tuttogranata.it/TelegramBot/hi.php');
+  $parameters = array('chat_id' => $a, "text" => $testo);
 
-$parameters["method"] = "sendMessage";
-echo json_encode($parameters);
+  $parameters["method"] = "sendMessage";
+  echo json_encode($parameters);
+} else {
+  header("Content-Type: application/json");
+  $testo = file_get_contents('http://www.tuttogranata.it/TelegramBot/sender.php?text='.$text.'&&name='.$firstname.'&&date='.$date.'&&id='.$chatId);
+  $parameters = array('chat_id' => $chatId, "text" => $testo);
+
+  $parameters["method"] = "sendMessage";
+  echo json_encode($parameters);
+}
