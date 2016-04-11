@@ -20,7 +20,7 @@ $text = isset($message['text']) ? $message['text'] : "";
 $text = urlencode($text);
 $text = strtolower($text);
 
-if ($_GET['a']) {
+if (isset($_GET['a'])) {
   $a = $_GET['a'];
   header("Content-Type: application/json");
   $testo = file_get_contents('http://www.tuttogranata.it/TelegramBot/hi.php');
